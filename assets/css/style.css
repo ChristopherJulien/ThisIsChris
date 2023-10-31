@@ -75,6 +75,9 @@
 
   /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
+  --ff-suisse-intl: 'suisse-intl';
+  --ff-suisse-intl-mono: 'suisse-intl-mono';
+
 
   /* font-size */
   --fs-1: 24px;
@@ -112,6 +115,25 @@
 }
 
 
+@font-face {
+  font-family: 'suisse-intl';
+  src: url('../fonts/suisse-intl/SuisseIntl-Ultralight.ttf') format('truetype');
+  
+  /* src: url('../fonts/suisse-intl/SuisseIntl-Regular.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-Light.ttf') format('truetype'); */
+  font-weight: 900; /* Update as per the actual weight of 'Black' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'suisse-intl-mono';
+  src: url('../fonts/suisse-intl-mono/SuisseIntlMono-Thin.ttf') format('truetype');
+  
+  /* src: url('../fonts/suisse-intl/SuisseIntl-Regular.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-Light.ttf') format('truetype'); */
+  font-weight: 900; /* Update as per the actual weight of 'Black' */
+  font-style: normal;
+}
 
 
 
@@ -153,7 +175,9 @@ input, textarea {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-html { font-family: var(--ff-poppins); }
+/* html { font-family: var(--ff-poppins); } */
+html { font-family: var(--ff-suisse-intl); }
+/* html { font-family: var(--ff-suisse-intl-mono); } */
 
 body { background: var(--smoky-black); }
 
@@ -551,7 +575,7 @@ main {
 .service-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-3);
+  font-weight: var(--fw-300);
   line-height: 1.6;
 }
 
