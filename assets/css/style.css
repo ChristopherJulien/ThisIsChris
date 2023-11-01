@@ -117,18 +117,32 @@
 
 @font-face {
   font-family: 'suisse-intl';
-  src: url('../fonts/suisse-intl/SuisseIntl-Ultralight.ttf') format('truetype');
-  
-  /* src: url('../fonts/suisse-intl/SuisseIntl-Regular.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-Black.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-BlackItalic.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-Bold.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-BoldItalic.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-Book.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-BookItalic.ttf') format('truetype'); */
   /* src: url('../fonts/suisse-intl/SuisseIntl-Light.ttf') format('truetype'); */
-  font-weight: 900; /* Update as per the actual weight of 'Black' */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-LightItalic.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-Medium.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-MediumItalic.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-Regular.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-RegularItalic.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-SemiBold.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-SemiBoldItalic.ttf') format('truetype'); */
+  src: url('../fonts/suisse-intl/SuisseIntl-Thin.ttf') format('truetype');
+  /* src: url('../fonts/suisse-intl/SuisseIntl-ThinItalic.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-Ultralight.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl/SuisseIntl-UltralightItalic.ttf') format('truetype');  */
+
+  font-weight:900; /* Update as per the actual weight of 'Black' */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'suisse-intl-mono';
   src: url('../fonts/suisse-intl-mono/SuisseIntlMono-Thin.ttf') format('truetype');
-  
   /* src: url('../fonts/suisse-intl/SuisseIntl-Regular.ttf') format('truetype'); */
   /* src: url('../fonts/suisse-intl/SuisseIntl-Light.ttf') format('truetype'); */
   font-weight: 900; /* Update as per the actual weight of 'Black' */
