@@ -23,6 +23,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+    })();
+  </script>
+
 </head>
 
 <body>
@@ -272,7 +281,9 @@
 
               <div class="service-icon-box">
                 <!-- TODO change icon -->
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets
+
+/images/icon-app.svg" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -543,7 +554,9 @@
               <h4 class="h4 timeline-item-title">Visiting Research Scholar at Bertoldi Lab, Harvard SEAS</h4>
               <span>June 2023 — December 2023, Cambridge, USA</span>
               <p class="timeline-text">
-                Redesigned and fabricated connections for network nodes, and assembled complex fluidic networks, including resin printing and curing.
+                Redesigned and fabricated connections for network nodes, and assembled complex fluidic networks, including resin printing
+
+ and curing.
                 Conducted extensive characterization of fluidic elements and validated performance of fluidic networks against numerical models.
                 Coded and implemented multiprocessing scripts for lab equipment. Developed a GUI dashboard for component control and data conversion.
               </p>
@@ -793,7 +806,9 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
+                 
+
+ <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
                   <img src="./assets/images/project-4.png" alt="Mori" loading="lazy">
@@ -1105,7 +1120,9 @@
                   <h3 class="h3 blog-item-title">Design digest #79</h3>
 
                   <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                    Optio
+
+ cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
                   </p>
 
                 </div>
@@ -1138,7 +1155,7 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form id="contact-form" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -1148,7 +1165,7 @@
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
@@ -1163,11 +1180,6 @@
 
   </main>
 
-
-
-
-
-
   <!--
     - custom js link
   -->
@@ -1178,6 +1190,28 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get form values
+      const fullname = event.target.fullname.value;
+      const email = event.target.email.value;
+      const message = event.target.message.value;
+
+      // Send email using EmailJS
+      emailjs.send("service_qpk2a14", "template_fa11gyb", {
+        from_name: fullname,
+        from_email: email,
+        message: message
+      }).then(function(response) {
+        alert('Message sent successfully!');
+      }, function(error) {
+        alert('Failed to send the message. Please try again later.');
+      });
+    });
+  </script>
 
 </body>
 
