@@ -883,7 +883,7 @@ main {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .skill .title-wrapper data {
@@ -905,8 +905,11 @@ main {
   border-radius: inherit;
 }
 
-
-
+.skills-list hr {
+  border: none;
+  border-top: 1px solid var(--orange-yellow-crayola);
+  margin: 20px 0;
+}
 
 
 /*-----------------------------------*\
