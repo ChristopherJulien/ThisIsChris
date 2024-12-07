@@ -4,4 +4,4 @@ ssh-add -l
 ssh -T git@github.com
 
 
-s
+ gitquick "deleted highschool education"
