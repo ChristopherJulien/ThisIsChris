@@ -1,0 +1,7 @@
+Check connection to git repo
+ssh-add ~/.ssh/thisischris
+ssh-add -l
+ssh -T git@github.com
+
+
+s
