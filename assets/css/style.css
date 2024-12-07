@@ -971,6 +971,7 @@ main {
 }
 
 
+
 .skills-item:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -1556,6 +1557,7 @@ textarea.form-input::-webkit-resizer {
 .coding-languages .h3 {
   margin-bottom: 20px;
 }
+
 
 .coding-languages-container {
   display: flex;
