@@ -3,3 +3,4 @@ ssh-add ~/.ssh/thisischris
 ssh-add -l
 ssh -T git@github.com
 
+git merge origin/gh-pages
