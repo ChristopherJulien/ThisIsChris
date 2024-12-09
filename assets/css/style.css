@@ -597,7 +597,7 @@ main {
 
 
 /**
- * #service 
+ * #service
  */
 
 .service {
@@ -657,7 +657,7 @@ main {
 
 
 /**
- * #testimonials 
+ * #testimonials
  */
 
 .testimonials {
@@ -839,7 +839,7 @@ main {
 
 
 /**
- * #clients 
+ * #clients
  */
 
 .clients {
@@ -890,7 +890,7 @@ main {
 
 
 /**
- * education and experience 
+ * education and experience
  */
 
 .timeline {
@@ -959,7 +959,7 @@ main {
 
 
 /**
- * skills 
+ * skills
  */
 
 .skills-title {
@@ -1607,10 +1607,14 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 10px);
   }
 
+  .tool-item {
+    min-width: calc(33.33% - 10px);
+  }
+
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, BLOG
    */
 
 
@@ -1892,6 +1896,18 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 35px);
   }
 
+  /* Tools */
+
+  .tool-list {
+    gap: 50px;
+    margin: 0 -30px;
+    padding: 45px;
+    scroll-padding-inline: 45px;
+  }
+
+  .tool-item {
+    min-width: calc(33.33% - 35px);
+  }
 
 
   /**
@@ -2221,7 +2237,7 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * MAIN 
+   * MAIN
    */
 
   main {
