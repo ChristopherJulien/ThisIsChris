@@ -31,3 +31,20 @@ raspberrpi
 ros
 tenesorflow
 tex
+
+Merge development to gh-pages
+
+Prep workspace
+git checkout development
+git pull origin development
+git checkout gh-pages
+git pull origin gh-pages
+git checkout development
+
+Merge development to gh-pages
+git checkout gh-pages
+git merge development
+
+Push to gh-pages
+git push origin gh-pages
+git checkout development
