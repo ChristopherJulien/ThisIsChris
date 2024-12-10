@@ -819,24 +819,29 @@
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
         <section class="projects">
-          <!-- CHANGE IF YOU WANT TO CATEGORIZE THEM -->
-          <!-- <ul class="filter-list">
+          <ul class="filter-list">
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Systems Integration</button>
+              <button data-filter-btn>Machine Learning</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Testing and Validation</button>
+              <button data-filter-btn>Sensors & Actuators</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Software Development</button>
+              <button data-filter-btn>Navigation</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Production Management</button>
+              <button data-filter-btn>Control Systems</button>
             </li>
-          </ul> -->
+            <li class="filter-item">
+              <button data-filter-btn>Internet of Things</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Research Ideas</button>
+            </li>
+          </ul>
 
           <div class="filter-select-box">
             <button class="filter-select" data-select>
@@ -846,51 +851,79 @@
               </div>
             </button>
 
-            <!-- <ul class="select-list">
+            <ul class="select-list">
               <li class="select-item">
                 <button data-select-item>All</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Mobile Robotics</button>
               </li>
               <li class="select-item">
                 <button data-select-item>Machine Learning</button>
               </li>
               <li class="select-item">
+                <button data-select-item>Sensors & Actuators</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Navigation</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Control Systems</button>
+              </li>
+              <li class="select-item">
                 <button data-select-item>Internet of Things</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Production Management</button>
+                <button data-select-item>Research Ideas</button>
               </li>
-            </ul> -->
+            </ul>
           </div>
 
           <ul class="project-list">
-            <!-- COMPASS -->
-            <!-- <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-1.jpg" alt="compass" loading="lazy">
-                </figure>
-                <h3 class="project-title">Compass</h3>
-                <p class="project-category">Internet of Things</p>
-              </a>
-            </li> -->
 
-            <!-- THESIS -->
-            <li class="project-post-item">
-              <a href="./assets/papers/Fluidic_Brain___Master_Thesis.pdf" target="_blank">
+            <!-- Research Ideas -->
+            <li class="project-item active" data-filter-item data-category="research ideas">
+              <a href="./assets/papers/BRIDGE_PoC_SPONDYLUS_final.pdf" target="_blank">
+                <figure class="project-banner-box">
+                  <img src="./assets/images/proj-spondylus.png" alt="proj-spondylus" loading="lazy">
+                </figure>
+                <div class="project-content" data-filter-item data-category="UAV">
+                  <h3 class="h3 project-item-title">Spondylus</h3>
+                  <p class="project-text">Grant Proposal | Bridge PoC</p>
+                  <div class="project-meta">
+                    <p class="project-category">Underwater Robot</p>
+                    <span class="dot"></span>
+                    <time datetime="2021-11-24">2024</time>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- Navigation -->
+            <li class="project-item active" data-filter-item data-category="navigation">
+              <a href="https://github.com/ChristopherJulien/iRobotCreate3" target="_blank">
 
                 <figure class="project-banner-box">
-                  <img src="./assets/images/proj-thes.png" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/proj-7sense.png" alt="alt-tag" loading="lazy">
                 </figure>
+                <div class="project-content">
+                  <h3 class="h3 project-item-title">ROS2 Navigation</h3>
+                  <p class="project-text"> Create3 TurtleBot | Humble </p>
+                  <div class="project-meta">
+                    <p class="project-category">Mobile Robots</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-11-24">2024</time>
+                  </div>
+                </div>
+              </a>
+            </li>
 
+            <!-- Sensors and actuators -->
+            <li class="project-item active" data-filter-item data-category="sensors & actuators">
+              <a href="./assets/papers/Fluidic_Brain___Master_Thesis.pdf" target="_blank">
+                <figure class="project-banner-box">
+                  <img src="./assets/images/proj-thes.png" alt="harvard" loading="lazy">
+                </figure>
                 <div class="project-content">
                   <h3 class="h3 project-item-title">Fluidic Brain</h3>
-                  <p class="project-text">Bertoldi Lab Thesis | Harvard-EPFL </p>
+                  <p class="project-text">Bertoldi Lab Thesis | Harvard-EPFL</p>
                   <div class="project-meta">
                     <p class="project-category">Soft Robotics</p>
                     <span class="dot"></span>
@@ -900,19 +933,17 @@
               </a>
             </li>
 
-            <!-- Semester Project LASA -->
-            <li class="project-post-item">
+            <!-- Control Systems -->
+            <li class="project-item active" data-filter-item data-category="control systems">
               <a href="./assets/papers/Semester_Project_LASA.pdf" target="_blank">
-
                 <figure class="project-banner-box">
-                  <img src="./assets/images/proj-sem2.png" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/proj-sem2.png" alt="lasa" loading="lazy">
                 </figure>
-
                 <div class="project-content">
-                  <h3 class="h3 project-item-title">Obstacle avoidance </h3>
+                  <h3 class="h3 project-item-title">Robotic Arm</h3>
                   <p class="project-text">LASA Project | EPFL </p>
                   <div class="project-meta">
-                    <p class="project-category">Cobots</p>
+                    <p class="project-category">Obstacle Avoidance</p>
                     <span class="dot"></span>
                     <time datetime="2022-11-24">2022</time>
                   </div>
@@ -920,65 +951,60 @@
               </a>
             </li>
 
-            <!-- Semester Project EPFL -->
-            <li class="project-post-item">
+            <!-- Sensors and actuators -->
+            <li class="project-item active" data-filter-item data-category="sensors & actuators">
               <a href="./assets/papers/Semester_Project_RRL.pdf" target="_blank">
-
                 <figure class="project-banner-box">
-                  <img src="./assets/images/proj-sem1.webp" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/proj-sem1.webp" alt="rrl" loading="lazy">
                 </figure>
-
                 <div class="project-content">
-                  <h3 class="h3 project-item-title">Mori 3</h3>
-                  <p class="project-text">RRL Project | EPFL</p>
+                  <h3 class="h3 project-item-title">Mori Robot</h3>
+                  <p class="project-text">Modular Robot | EPFL</p>
                   <div class="project-meta">
-                    <p class="project-category">Modular Robots</p>
+                    <p class="project-category">Sensor Fusion</p>
                     <span class="dot"></span>
-                    <time datetime="2021-11-24">2021</time>
+                    <time datetime="2023-11-24">2021</time>
                   </div>
                 </div>
               </a>
             </li>
 
-            <!-- Semester Project Spondylus -->
-            <li class="project-post-item">
-              <a href="./assets/papers/BRIDGE_PoC_SPONDYLUS_final.pdf" target="_blank">
-
+            <!-- Machine Learning -->
+            <li class="project-item active" data-filter-item data-category="machine learning">
+              <a href="https://github.com/EliottZemour/dis_project" target="_blank">
                 <figure class="project-banner-box">
-                  <img src="./assets/images/proj-spondylus.png" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/proj-dis.png" alt="rrl" loading="lazy">
                 </figure>
-
                 <div class="project-content">
-                  <h3 class="h3 project-item-title">Spondylus</h3>
-                  <p class="project-text">Grant Proposal | Bridge PoC</p>
+                  <h3 class="h3 project-item-title"> Webots Simulation</h3>
+                  <p class="project-text"> DIS Project | EPFL</p>
                   <div class="project-meta">
-                    <p class="project-category">Munitions Retrieval</p>
+                    <p class="project-category">Machine Learning</p>
                     <span class="dot"></span>
-                    <time datetime="2021-11-24">2024</time>
+                    <time datetime="2023-11-24">2021</time>
                   </div>
                 </div>
               </a>
             </li>
 
-            <!-- ROS2 7S Robot -->
-            <li class="project-post-item">
-              <a href="https://github.com/ChristopherJulien/iRobotCreate3" target="_blank">
-
+            <!-- Internet of things -->
+            <li class="project-item active" data-filter-item data-category="internet of things">
+              <a href="https://github.com/ChristopherJulien/Perfit/tree/V6-Login  " target="_blank">
                 <figure class="project-banner-box">
-                  <img src="./assets/images/proj-7sense.png" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/proj-perfit.png" alt="rrl" loading="lazy">
                 </figure>
-
                 <div class="project-content">
-                  <h3 class="h3 project-item-title"></h3>
-                  <p class="project-text"> Create3 TurtleBot | ROS2 </p>
+                  <h3 class="h3 project-item-title"> Perfit </h3>
+                  <p class="project-text"> Perfect Outfit | EPFL</p>
                   <div class="project-meta">
-                    <p class="project-category">Mobile Robots</p>
+                    <p class="project-category">App Dev</p>
                     <span class="dot"></span>
-                    <time datetime="2024-11-24">2024</time>
+                    <time datetime="2023-11-24">2022</time>
                   </div>
                 </div>
               </a>
             </li>
+
 
             <!-- Particle Swarm Optimization
             <li class="project-item  active" data-filter-item data-category="web design">
@@ -1168,7 +1194,7 @@
               <a href="https://medium.com/p/b3b5e922eb1f/edit">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.png" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/blog-1.png" alt="alt-tag" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1201,7 +1227,7 @@
                 href="https://medium.com/@stockerjulien/swiss-robotic-day-2024-a-reflection-on-innovation-and-entrepreneurship-b9a7177c296d">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.png" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/blog-2.png" alt="alt-tag" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1229,12 +1255,12 @@
             </li>
 
             <!-- Dont Die Economy -->
-            <li class="blog-post-item">
+            <!-- <li class="blog-post-item">
               <a
                 href="https://medium.com/@stockerjulien/swiss-robotic-day-2024-a-reflection-on-innovation-and-entrepreneurship-b9a7177c296d">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.png" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/blog-2.png" alt="alt-tag" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1259,7 +1285,7 @@
                 </div>
 
               </a>
-            </li>
+            </li> -->
 
             <!-- <li class="blog-post-item">
               <a href="#">

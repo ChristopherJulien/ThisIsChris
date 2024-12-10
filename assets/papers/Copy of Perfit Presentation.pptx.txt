@@ -1,0 +1,318 @@
+App Presentation
+PERFIT
+
+
+Professor David Atienza 
+Professor Giovanni Ansaloni
+
+Supervisor Rafa Medina 
+Christopher Julien Stocker (266575), 
+Yuanyuan Zheng (282304) ,
+Vladimir Reymond (272260)
+
+ 
+Semester Project
+Fall 2022
+1
+
+2
+App Idea
+
+Decision Fatigue
+refers to the deteriorating quality of decisions made by an individual after a long session of decision making.
+ Barack Obama, Steve Jobs, and Mark Zuckerberg have been known to reduce their everyday clothing down to one or two outfits in order to limit the number of decisions they make in a day.		[wiki: Decision Fatigue]
+Start with my introduction 
+
+3
+App Idea
+
+What if you could manage to everyday wear the perfect outfit without it being the same outfit?
+Start with my introduction 
+
+To develop an Android application that alleviates the mental energy of outfit selection in the morning.
+
+The user builds a virtual closet and the application formulates an outfit suggestion. 
+
+Suggestions are based on the user’s desire for "Sports, Fashionable, Comfortable",
+
+Suggestions take into account clothes’ cleanliness
+
+Suggestions take into account weather
+4
+Perfit
+
+Start with my introduction 
+
+5
+Login & Registration
+Dashboard Navigation
+
+User Interaction
+Three Levels 
+
+Start with my introduction 
+
+6
+User
+Firebase Structure
+
+Firestore Authentication
+
+Email identifier
+User id
+
+Verification done on FirestoreClass.kt 
+Constants Logged_In_Username –› Stored on shared preferences 
+- avoid signing in at every launch 
+- reduce firestore reads
+Start with my introduction 
+
+7
+Clothes
+Firebase Structure - Firestore Storage
+
+
+
+Database of all users’ clothing items
+Image: item’s image link
+
+
+Start with my introduction 
+
+8
+Top
+Firebase Structure - Firestore Database
+
+
+
+-Availability 
+-Category 
+-Cleanliness 
+-Id Clothing 
+-Id User 
+-Image
+-Purpose
+-Season
+Bottom
+Shoes
+User
+Outfit
+
+-Id Outfit
+-Id of 3 clothes
+-Id User
+-3 Image URIs
+-Purpose
+-Season
+-email
+-name
+-gender
+-Tel 
+Start with my introduction 
+
+1. Login
+9
+Start with my introduction 
+
+1. Login
+10
+LOGIN - Already registered? 
+REGISTER
+FORGOT PASSWORD
+COMPLETE USER INFORMATION
+Start with my introduction 
+
+1. Login
+11
+LOGIN
+REGISTER
+FORGOT PASSWORD
+COMPLETE USER INFORMATION
+Start with my introduction 
+
+1. Login
+12
+LOGIN
+REGISTER
+FORGOT PASSWORD
+COMPLETE USER INFORMATION
+Start with my introduction 
+
+1. Login
+13
+LOGIN
+REGISTER
+FORGOT PASSWORD 
+COMPLETE USER INFORMATION
+Start with my introduction 
+
+1. Login
+14
+LOGIN
+REGISTER
+FORGOT PASSWORD 
+COMPLETE USER INFORMATION
+Start with my introduction 
+
+2. Bottom Navigation
+15
+The user can go switch between three principle navigation menus.
+
+
+
+Start with my introduction 
+
+2. Bottom Navigation
+16
+CLOSET
+DASHBOARD
+OUTFIT
+
+Start with my introduction 
+
+2. Bottom Navigation
+17
+CLOSET → Add clothes
+DASHBOARD
+OUTFIT
+
+Start with my introduction 
+
+2. Bottom Navigation
+18
+CLOSET → Add clothes
+DASHBOARD
+OUTFIT
+
+Start with my introduction 
+
+2. Bottom Navigation
+19
+CLOSET → Add clothes
+DASHBOARD
+OUTFIT
+
+Start with my introduction 
+
+2. Bottom Navigation
+20
+CLOSET → Do laundry
+DASHBOARD
+OUTFIT
+
+Start with my introduction 
+
+2. Bottom Navigation
+21
+CLOSET → Do laundry
+DASHBOARD
+OUTFIT
+
+Start with my introduction 
+
+22
+CLOSET
+DASHBOARD
+OUTFIT
+
+2. Bottom Navigation
+Start with my introduction 
+
+23
+CLOSET
+DASHBOARD → outfit selection criterias
+OUTFIT
+
+2. Bottom Navigation
+Start with my introduction 
+
+24
+CLOSET
+DASHBOARD→ daily outfit suggestion
+OUTFIT
+
+2. Bottom Navigation
+Start with my introduction 
+
+25
+CLOSET
+DASHBOARD→ discover more possible combinations
+OUTFIT
+
+2. Bottom Navigation
+Start with my introduction 
+
+26
+CLOSET
+DASHBOARD → decide your outfit of the day!  
+OUTFIT
+
+2. Bottom Navigation
+Start with my introduction 
+
+27
+2. Bottom Navigation
+CLOSET
+DASHBOARD
+OUTFIT → outfits sorted by season and purpose
+
+Start with my introduction 
+
+28
+2. Bottom Navigation
+CLOSET
+DASHBOARD
+OUTFIT → Add Outfit
+
+Start with my introduction 
+
+29
+2. Bottom Navigation
+CLOSET
+DASHBOARD
+OUTFIT → Add Outfit
+
+Start with my introduction 
+
+30
+2. Bottom Navigation
+CLOSET
+DASHBOARD
+OUTFIT → Add Outfit
+
+Start with my introduction 
+
+31
+3. Suggestion Algorithm
+Start with my introduction 
+
+32
+3. Suggestion Algorithm
+1) Choose season  either WINTER-FALL OR  SUMMER-SPRING	
+2) Select the purpose SPORTY CASUAL FORMAL NIGHT
+3) App will suggest an outfit that fits those descriptions and is clean (available) in closet
+4) The user can ask the app to retry and make new suggestion or go back
+Start with my introduction 
+
+33
+4. Watch Implementation
+Idea is to reduce cleanliness of outfit if the users heartbeat is above certain threshold
+(i.e. if the user is running or hiking the items cleanliness go down quicker)
+
+ 
+Start with my introduction 
+
+34
+4. Watch Implementation
+1) The watch is notified when we select a outfit and recover the cleanliness of the outfit.
+2) The watch start to take the heart rate.
+3) For a define interval of time, depending of the heart rate we reduce the cleanliness of the outfit.
+4) The cleanliness of the clothes is shown on the watch.
+5) The watch notified the smartphone of the new cleanliness of the clothes.
+Start with my introduction 
+
+35
+Thank you for your attention
+Special thanks to our assistant,
+
+Rafa Medina and professor Giovanni Ansaloni
