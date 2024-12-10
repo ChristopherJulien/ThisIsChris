@@ -161,3 +161,22 @@ for (let i = 0; i < navigationLinks.length; i++) {
     window.scrollTo(0, 0);
   });
 }
+// Sort projects by date
+const sortProjectsByDate = () => {
+  const projectList = document.querySelector(".project-list"); // Select the project list container
+  const projects = Array.from(document.querySelectorAll(".project-item")); // Select all project items
+
+  // Sort projects based on their 'time' datetime attribute
+  projects.sort((a, b) => {
+    const dateA = new Date(a.querySelector("time").getAttribute("datetime"));
+    const dateB = new Date(b.querySelector("time").getAttribute("datetime"));
+    return dateB - dateA; // Sort in descending order (most recent first)
+  });
+
+  // Clear the existing projects and append sorted ones
+  projectList.innerHTML = "";
+  projects.forEach(project => projectList.appendChild(project));
+};
+
+// Call the function to sort projects on page load
+window.addEventListener("DOMContentLoaded", sortProjectsByDate);

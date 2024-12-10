@@ -34,6 +34,8 @@ tex
 
 Merge development to gh-pages
 
+revert to last commit
+
 Prep workspace
 git checkout development
 git pull origin development
