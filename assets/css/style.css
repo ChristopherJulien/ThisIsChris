@@ -883,6 +883,60 @@ main {
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
+/* CSS Styles */
+
+.info-container {
+  display: flex;
+  /* Establishes Flexbox layout */
+  justify-content: space-between;
+  /* Distributes space between child elements */
+  align-items: center;
+  /* Vertically centers the items if they have different heights */
+  width: 100%;
+  /* Ensures the container takes up the full width of its parent */
+  /* padding: 10px 20px; */
+  /* Optional: Adds padding for spacing */
+  /* box-sizing: border-box; */
+  /* Includes padding in the total width and height */
+  /* background-color: #f9f9f9;
+  /* Optional: Adds a subtle background color */
+  /* border: 1px solid #ddd; */
+  /* Optional: Adds a light border */
+  /* border-radius: 5px; */
+  /* Optional: Rounds the corners */
+}
+
+.location {
+  text-align: right;
+  /* Aligns text to the left */
+  font-weight: italic;
+  /* Makes the text bold */
+
+}
+
+.dates {
+  text-align: left;
+  /* Aligns text to the right */
+  font-style: bold;
+  /* Makes the text italic */
+}
+
+/* Responsive Design: Adjust layout on smaller screens */
+@media (max-width: 600px) {
+  .info-container {
+    flex-direction: column;
+    /* Stacks elements vertically */
+    align-items: flex-start;
+    /* Aligns items to the start (left) */
+  }
+
+  .dates {
+    text-align: left;
+    /* Aligns dates to the left on small screens */
+    margin-top: 5px;
+    /* Adds space between location and dates */
+  }
+}
 
 .article-title {
   margin-bottom: 30px;
