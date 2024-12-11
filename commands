@@ -32,7 +32,8 @@ ros
 tenesorflow
 tex
 
-Merge development to gh-pages
+Git return to last commit
+git restore .
 
 revert to last commit
 

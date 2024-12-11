@@ -91,7 +91,6 @@ const filterFunc = function (selectedValue) {
     }
 
   }
-
 }
 
 // add event in all filter button items for large screen
