@@ -861,8 +861,41 @@ main {
   scroll-padding-inline: 25px;
 }
 
+.tools-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15 px;
+  margin: 5px;
+  /* margin: 0 -15px; */
+  padding: 15px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
+}
+
+.tools-item {
+  /* min-width: 50%; */
+  min-width: 25%;
+  scroll-snap-align: start;
+}
+
+.tools-item img {
+  width: 100%;
+  filter: grayscale(1);
+  transition: var(--transition-1);
+}
+
+.tools-item img:hover {
+  filter: grayscale(0);
+}
+
 .clients-item {
-  min-width: 50%;
+  /* min-width: 50%; */
+  min-width: 25%;
   scroll-snap-align: start;
 }
 
@@ -1978,7 +2011,7 @@ textarea.form-input::-webkit-resizer {
   /* Tools */
 
   .tool-list {
-    gap: 50px;
+    gap: 25px;
     margin: 0 -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
