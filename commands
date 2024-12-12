@@ -49,5 +49,5 @@ git checkout gh-pages
 git merge development
 
 Push to gh-pages
-git push origin gh-pages
+`git push origin gh-pages`
 git checkout development
