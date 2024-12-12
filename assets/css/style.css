@@ -928,7 +928,46 @@ main {
   #RESUME
 \*-----------------------------------*/
 /* CSS Styles */
+.download-cv {
+  text-align: left;
+  margin-bottom: 30px;
+}
 
+.cv-btn {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  padding: 15px 25px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.cv-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.cv-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.cv-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+.cv-btn ion-icon {
+  font-size: 1.4em;
+}
 
 /* Responsive Design: Adjust layout on smaller screens */
 @media (max-width: 600px) {
