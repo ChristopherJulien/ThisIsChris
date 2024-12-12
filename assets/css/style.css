@@ -75,7 +75,7 @@
   --fs-5: 15px;
   --fs-6: 14px;
   --fs-7: 13px;
-  --fs-7-5: 12px;
+  --fs-7_5: 12px;
   --fs-8: 11px;
 
   /* font-weight */
@@ -101,6 +101,11 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 
+}
+
+@font-face {
+  font-family: 'suise-intl-italic';
+  src: url('../fonts/suisse-intl/SuisseIntl-ThinItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -137,8 +142,8 @@
 
 @font-face {
   font-family: 'suisse-intl-mono';
-  src: url('../fonts/suisse-intl-mono/SuisseIntlMono-Thin.ttf') format('truetype');
-  /* src: url('../fonts/suisse-intl/SuisseIntl-Regular.ttf') format('truetype'); */
+  /* src: url('../fonts/suisse-intl-mono/SuisseIntlMono-Thin.ttf') format('truetype'); */
+  src: url('../fonts/suisse-intl/SuisseIntl-Regular.ttf') format('truetype');
   /* src: url('../fonts/suisse-intl/SuisseIntl-Light.ttf') format('truetype'); */
   font-weight: 900;
   /* Update as per the actual weight of 'Black' */
@@ -951,33 +956,8 @@ main {
 * education and experience
 */
 
-.timeline-container {
-  display: flex;
-  /* Establishes Flexbox layout */
-  justify-content: space-between;
-  font-size: var(--fs-7);
-  /* Distributes space between child elements */
-  align-items: center;
-  /* Vertically centers the items if they have different heights */
-  width: 100%;
-  line-height: 1.3;
-  margin-bottom: 7px;
-}
 
-.location {
-  text-align: right;
-  /* Aligns text to the left */
-  font-weight: italic;
-  /* Makes the text bold */
 
-}
-
-.dates {
-  text-align: left;
-  /* Aligns text to the right */
-  font-style: bold;
-  /* Makes the text italic */
-}
 
 .timeline {
   margin-bottom: 30px;
@@ -1003,13 +983,7 @@ main {
   margin-bottom: 20px;
 }
 
-.timeline-item-title {
-  font-family: 'suise-intl-semibold', sans-serif;
-  font-weight: var(--fw-200);
-  font-size: var(--fs-5);
-  line-height: 1.3;
-  margin-bottom: 7px;
-}
+
 
 .timeline-list span {
   color: var(--vegas-gold);
@@ -1039,6 +1013,37 @@ main {
   box-shadow: 0 0 0 4px var(--jet);
 }
 
+
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-8);
+  font-family: monospace;
+  align-items: center;
+  width: 100%;
+  line-height: 1.3;
+  margin-bottom: 2px;
+}
+
+.location {
+  text-align: left;
+  font-weight: italic;
+}
+
+.dates {
+  text-align: right;
+  font-style: bold;
+}
+
+.timeline-item-title {
+  /* font-family: 'suise-intl-semibold', sans-serif; */
+  font-family: var(--ff-suisse-intl-mono);
+  font-weight: var(--fw-200);
+  font-size: var(--fs-4);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
 .timeline-text {
   color: var(--light-gray);
   font-size: var(--fs-7);
@@ -1046,11 +1051,9 @@ main {
   line-height: 1.6;
 }
 
-
 /**
  * skills
  */
-
 .skills-title {
   margin-bottom: 20px;
 }
